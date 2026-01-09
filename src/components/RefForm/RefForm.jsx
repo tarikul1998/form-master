@@ -40,7 +40,7 @@ export default RefForm;
 
 // 4. uncontrolled element: useRef to create a reference to the element
 // and access value by using like: nameRef.current.value
-
+// uncontrolled element(State diye control nah korbo nah, DOM er moddhe thakbe oitake refremce diye access korbo)
 // Element ta ke react er state diye manage nah kore,
 // Oita theke ekta reference diye jinish ta ke niye ashi
 
