@@ -24,3 +24,6 @@ const SimpleForm = () => {
 };
 
 export default SimpleForm;
+
+// 1. Use form tag and onSubmit handler with event(e)
+// 2. From e access e.target.[name of the input field].value

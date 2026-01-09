@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const StateFulForm = () => {
-    const [name, setName] = useState('Rashed');
+    const [name, setName] = useState('Rojoni Klanto');
     const [email, setEmail] = useState(null);
     const [password, setPassword] = useState(null);
     const [error, setError] = useState('');
@@ -10,18 +10,19 @@ const StateFulForm = () => {
         e.preventDefault();
         if (password.length < 6) {
             setError('Password must be 6 characters or longer');
-        } else {
+        }
+        else {
             setError('');
         }
         console.log(name, email, password);
     }
 
     const handleNameChange = e => {
+        // console.log(e.target.value);
         setName(e.target.value);
     }
 
     const handleEmailChange = e => {
-        // console.log(e.target.value);
         setEmail(e.target.value)
     }
 
@@ -43,7 +44,7 @@ const StateFulForm = () => {
                 <br />
                 <input type="submit" value="Submit" />
                 {
-                    error && <p>{error}</p>
+                    error && <p style={{ color: 'red' }}>{error}</p>
                 }
             </form>
         </div>
@@ -51,3 +52,5 @@ const StateFulForm = () => {
 };
 
 export default StateFulForm;
+
+// 2. controlled element: use individual field state for each input field
