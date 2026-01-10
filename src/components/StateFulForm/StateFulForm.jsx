@@ -53,4 +53,4 @@ const StateFulForm = () => {
 
 export default StateFulForm;
 
-// 2. controlled element: use individual field state for each input field
+// controlled element: use individual field state for each input field
